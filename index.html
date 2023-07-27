@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bubu Dudu</title>
+    
+    <link rel="icon" type="image/x-icon" href="./img/favicon_io/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Peak Token</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
+      @font-face {
+        font-family: ChapeauTRIAL;
+        src: url('./font/ChapeauTRIAL-Regular.otf') format("opentype");
+      }
+      body{
+        /* font-family: 'ChapeauTRIAL', sans-serif; */
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: 0;
+        /* font-family: 'ChapeauTRIAL', sans-serif; */
+      }
+      img {
+        max-width: 100%;
+        object-fit: contain;
+      }
+      .bg-hero {
+        background-image: url("./img/home-masthead.jpg");
+        background-size: cover;
+      }
+      
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const accordionHeaders = document.querySelectorAll(".accordion-header");
+
+        accordionHeaders.forEach((header) => {
+          header.addEventListener("click", function () {
+            const isOpen = this.nextElementSibling.classList.contains("hidden");
+            closeAllAccordionContents();
+            if (isOpen) {
+              this.nextElementSibling.classList.remove("hidden");
+              this.querySelector(".fa-plus").classList.add("hidden");
+              this.querySelector(".fa-minus").classList.remove("hidden");
+            }
+          });
+        });
+
+        function closeAllAccordionContents() {
+          const accordionContents =
+            document.querySelectorAll(".accordion-content");
+          const chevronDowns = document.querySelectorAll(".fa-plus");
+          const chevronUps = document.querySelectorAll(".fa-minus");
+          accordionContents.forEach((content) => {
+            content.classList.add("hidden");
+          });
+          chevronDowns.forEach((chevron) => {
+            chevron.classList.remove("hidden");
+          });
+          chevronUps.forEach((chevron) => {
+            chevron.classList.add("hidden");
+          });
+        }
+      });
+    </script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              primary: "ChapeauTRIAL",
+              secondary: "Manrope"
+             },
+            backgroundImage: {
+              hero1: "url('./img/home-masthead.jpg')",
+            },
+            colors: {
+              black: "#000000",
+              white: "#FFFFFF",
+              brandColor: "#FBA3A1",
+              primary: "#1D1D1D",
+              secondary: "#262520",
+              tertiary: "#676767",
+              yellow: "#FFD600",
+              footerBg: "#FCFEFC",
+              borderMain: "#1d1d1d"
+            },
+          },
+        },
+      };
+    </script>
+    <!-- Google tag (gtag.js) --> 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0P24Q57V1P"></script> 
+    <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-0P24Q57V1P'); </script>
+
+  </head>
+  <body class="font-primary bg-white text-[13px] text-[#000] font-[400]">
+    <header class="w-full flex flex-col justify-between sm:bg-hero1 bg-no-reapet bg-cover h-screen md:py-6 2xl:py-9">
+      <nav
+        class="w-full max-w-[1440px] mx-auto flex justify-between items-center p-3 md:p-0"
+      >
+        <div>
+          <h1 class="sm:text-white text-[24px] font-[500]">$bubu</h1>
+        </div>
+        <button
+          class="bg-black text-white px-5 py-3 rounded-[30px] border border-borderMain md:hover:bg-white md:hover:text-black transition ease duration-400"
+        >
+        <a href="https://t.me/bubuuanduduu" target="_blank">Join Telegram</a>
+
+        </button>
+      </nav>
+      <div class="w-full sm:h-5/6 flex justify-center justify-self-center">
+        <div class="sm:pt-8 sm:-ml-[68px]">
+          <h1 class="text-[64px] md:text-[100px] font-[500] text-center">
+            Herro
+          </h1>
+          <p class="text-[21px] w-[330px] text-center md:-mt-5">
+            Help dudu pay for bubu’s shopping and pizza
+          </p>
+        </div>
+      </div>
+      <div class="sm:hidden border-b border-borderMain sm:border-none">
+        <img src="./img/hero.png" class="min-w-full w-full" alt="bubu-dudu">
+      </div>
+    </header>
+    <section
+      class="py-10 md:py-[100px] px-8 sm:px-0 max-w-[900px] mx-auto flex flex-col gap-6 justify-center items-center sm:text-center"
+    >
+      <p class="text-[13px] sm:text-[21px]">
+        Is your dating life like a roller coaster ride anon? Filled with
+        thrills, but also loaded with its fair share of wallet woes. Dinners💸,
+        gifts💸💸, all those fantastic experiences💸💸💸 - they sure do add up,
+        don’t they? Not to mention those awkward moments when the bill arrives
+        and you're both fumbling for wallets? Or the stress of squeezing every
+        penny to plan for special dates? 
+      </p>
+      <p class="text-[13px] sm:text-[21px]">
+        With $bubu, we're leaving all that in the past and supporting all you
+        love birds out there. We're all about taking care of those dating costs,
+        giving you the freedom to craft unforgettable moments without that pesky
+        money worry nagging at the back of your mind.
+      </p>
+      <p class="text-[13px] sm:text-[21px]">
+        $bubu is here to help love blossom, not just romantically, but
+        financially too. Embark on an adventure of love that's not just
+        exciting, but prosperous too. Now isn't that what we call a happy ever
+        after?
+      </p>
+    </section>
+    <section
+      class="bg-brandColor flex flex-col md:flex-row gap-5 justify-center items-center py-8 md:py-[50px]"
+    >
+      <p class="text-white text-[20px] sm:text-[24px]">
+        Join Our Telegram Community
+      </p>
+      <button
+        class="text-black bg-white px-5 py-3 rounded-[30px] md:hover:text-white md:hover:bg-black transition ease duration-400"
+      >
+      <a href="https://t.me/bubuuanduduu" target="_blank">Join Telegram</a>
+
+      </button>
+    </section>
+    <section class="px-3 lg:px-0 mb-[120px]">
+      <div class="w-full lg:w-[1000px] mx-auto">
+        <div class="my-5 md:mb-[100px] border-b border-mainBorder sm:border-none">
+          <h1 class="text-[14px] sm:text-[32px]">
+            <marquee behavior="" direction="">
+
+              The ONE Token to Fund All Your Relationship Expenses
+            </marquee>
+          </h1>
+        </div>
+        <h1 class="text-[32px] md:text-[48px] font-[500] md:hidden y-8 px-5 md:px-0">Utility</h1>
+        <div class="px-5 md:px-0 lg:w-[1000px] flex flex-col md:flex-row justify-between items-center gap-[60px]">
+          <div class="flex justify-center items-center">
+            <div class="flex flex-col items-center gap-3">
+              <div class="p-3">
+                <img src="./img/utility.png" class="rounded-lg" alt="" />
+              </div>
+              <p class="hidden sm:block">
+                That's $bubu for you, folks. Not just a token, but a sidekick in
+                your journey of love, helping you build a solid romantic and
+                financial foundation. It's more than just an exciting
+                adventure—it's a prosperous one. Welcome to your happy ever after.
+              </p>
+            </div>
+          </div>
+          <div class="w-full flex flex-col gap-10">
+            <h1 class="text-[32px] md:text-[48px] font-[500] hidden md:block">Utility</h1>
+            <div class="flex flex-col gap-9">
+              <div class="flex flex-col gap-1">
+                <h2
+                  class="text-brandColor text-[24px] md:text-[32px] font-[500]"
+                >
+                  Your Love-Insurance
+                </h2>
+                <p>
+                  Heartbreaks in dating can be rough, we get that. While we
+                  can't play Cupid to prevent them or wave a magic wand to mend
+                  a broken heart, what we can do is promise to have your back.
+                  Say hello to $bubu's 'Principal Sum Guarantee'. If the token
+                  value hits rock bottom within three years, we guarantee you'll
+                  get your principal invested sum back. How's that for a safety
+                  net, huh? We've got a good chunk of token sales funds sitting
+                  pretty in a De-fi exchange that's known for tripling its value
+                  each year. So, rest easy - your investment's in safe hands.
+                </p>
+              </div>
+              <div class="flex flex-col gap-1 sm:gap-2">
+                <h2
+                  class="text-brandColor text-[24px] md:text-[32px] font-[500]"
+                >
+                  Love's a Gamble
+                </h2>
+                <p>
+                  Sometimes, love feels like a game of chance. With $bubu's
+                  'Ballin’ and Rollin’' functionality, it literally is! Flip
+                  your way to fortune and double your holdings. With all those
+                  extra tokens, you'll have enough to sweep your partner off
+                  their feet with grand gestures, keeping that spark alive.
+                </p>
+              </div>
+              <div class="flex flex-col gap-1 sm:gap-2">
+                <h2
+                  class="text-brandColor text-[24px] md:text-[32px] font-[500]"
+                >
+                  Love Don't Cost a Thing
+                </h2>
+                <p>
+                  Want to build memories that'll last a lifetime without
+                  draining your savings? Stake your $bubu, sit back and let our
+                  '20% APY Staking Rewards' functionality do the work. Your
+                  tokens will be busy earning more tokens while you're out there
+                  painting the town red, building those unforgettable memories.
+                </p>
+              </div>
+              <div class="flex flex-col gap-1 sm:gap-2">
+                <h2
+                  class="text-brandColor text-[24px] md:text-[32px] font-[500]"
+                >
+                  Love Locked Down
+                </h2>
+                <p>
+                  No more sweating over the big questions with $bubu's 'Seal the
+                  Deal' feature. We're partnering up with some top-notch
+                  jewelers so you can use $bubu to buy that perfect diamond,
+                  natural or lab-grown. It's the shiny, everlasting symbol of
+                  your commitment, stress-free.
+                </p>
+              </div>
+              <div class="flex flex-col gap-1 sm:gap-2">
+                <h2
+                  class="text-brandColor text-[24px] md:text-[32px] font-[500]"
+                >
+                  Your Love Lifeline
+                </h2>
+                <p>
+                  Here's the thing - relationships can be tough, but $bubu's got
+                  your back every step of the way. 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="bg-brandColor flex flex-col md:flex-row gap-5 justify-center items-center py-8 md:py-[50px]"
+    >
+      <p class="text-white text-[20px] sm:text-[24px]">
+        Join Our Telegram Community
+      </p>
+      <button
+        class="text-black bg-white px-5 py-3 rounded-[30px] md:hover:text-white md:hover:bg-black transition ease duration-400"
+      >
+        <a href="https://t.me/bubuuanduduu" target="_blank">Join Telegram</a>
+      </button>
+    </section>
+    <!-- title of tokenomics -->
+    <section class="max-w-[1000px] mx-auto mt-10">
+      <div class="w-full flex flex-col justify-center items-center">
+        <h1 class="text-[14px] sm:text-[28px] md:text-[48px] font-[500] w-full flex flex-wrap text-center">
+          Create Lasting Connections And Cherished Memories Without The Financial Stress</h1>
+      </div>
+    </section>
+    <section id="tokenomics" class="max-w-[1440px] px-3 mx-auto">
+      <div class="px-5 md:0 max-w-[1004px] mx-auto">
+        <div class="flex flex-col justify-start items-start gap-2 my-10">
+          <h1 class="text-brandColor text-[24px] md:text-[32px] font-[500]">Tokenomics</h1>
+          <p class="sm:text-[15px] tracking-wider">
+            <span>
+              At $bubu, we believe in mixing a bit of fun with our finance. That's
+              why we've baked love into every part of our token distribution. Our
+              tokenomics are thoughtfully designed to protect your investments,
+              multiply your holdings, and even bring a bit of sparkle into your
+              life.
+            </span>
+            <span class="block mt-2">
+              Every token you hold or transaction you make with $bubu helps fuel
+              our ecosystem, providing robust financial backing to the entire
+              $bubu community. From Principal Sum Guarantee to 20% APY Staking
+              Rewards and all the way to dazzling diamond purchases, it all comes
+              back to our unique tokenomics.
+            </span>
+            <span class="block mt-2">
+              We're here to make sure that
+              your love journey with $bubu is not just exciting, but prosperous
+              too. So, dive in and let's make some magic (and money) together!
+            </span>
+            <span class="block mt-2">
+              Because at the end of the day, $bubu is more than a token - it's a
+              token of love.
+            </span>
+          </p>
+        </div>
+        <!-- tokenomics -->
+        <div class="w-full font-secondary md:w-[974px] h-[126px] sm:h-[280px] md:h-[347px] mx-auto border border-brandColor mt-[50px] sm:mt-[100px] md:mt-[150px]">
+          <div class="h-1/3 flex flex-col justify-center items-center">
+            <h2 class="text-[15px] sm:text-[18px] font-[600] text-brandColor">Supply</h2>
+            <p class="text-[11px] sm:text-[18px] md:text-[28px] font-[800]">420,000,000,000</p>
+          </div>
+          <div class="h-1/3 grid grid-cols-6 border-y border-brandColor">
+            <div class="flex flex-col justify-center items-center border-r border-brandColor">
+              <p class="text-[7px] sm:text-[12px] md:text-[18px] font-[600]">Presale</p>
+              <p class="text-[12px] sm:text-[20px] md:text-[28px] font-[800]">25%</p>
+            </div>
+            <div class="flex flex-col justify-center items-center border-r border-brandColor">
+              <p class="text-[7px] sm:text-[12px] md:text-[18px] font-[600]">Ecosystem</p>
+              <p class="text-[12px] sm:text-[20px] md:text-[28px] font-[800]">20%</p>
+            </div>
+            <div class="flex flex-col justify-center items-center border-r border-brandColor">
+              <p class="text-[7px] sm:text-[12px] md:text-[18px] font-[600]">Staking</p>
+              <p class="text-[12px] sm:text-[20px] md:text-[28px] font-[800]">16%</p>
+            </div>
+            <div class="flex flex-col justify-center items-center border-r border-brandColor">
+              <p class="text-[7px] sm:text-[12px] md:text-[18px] font-[600]">Marketing</p>
+              <p class="text-[12px] sm:text-[20px] md:text-[28px] font-[800]">15%</p>
+            </div>
+            <div class="flex flex-col justify-center items-center border-r border-brandColor">
+              <p class="text-[7px] sm:text-[12px] md:text-[18px] font-[600]">DEX Liquidity</p>
+              <p class="text-[12px] sm:text-[20px] md:text-[28px] font-[800]">19%</p>
+            </div>
+            <div class="flex flex-col justify-center items-center border-r border-brandColor">
+              <p class="text-[7px] sm:text-[12px] md:text-[18px] font-[600]">Team</p>
+              <p class="text-[12px] sm:text-[20px] md:text-[28px] font-[800]">5%</p>
+            </div>
+            
+          </div>
+            <div class="h-1/3 w-full flex justify-around items-center sm:max-w-[1004px]">
+              <div>
+                <h2 class="text-[10px] sm:text-[20px] md:text-[28px] font-[800] text-center">Pre-sale</h2>
+                <p class="text-[8px] sm:text-[13px] md:text-[18px] font-[600] text-center">Stage</p>
+              </div>
+              <div>
+                <h2 class="text-[10px] sm:text-[20px] md:text-[28px] font-[800] text-center" >105,000,000</h2>
+                <p class="text-[8px] sm:text-[13px] md:text-[18px] font-[600] text-center">Pre-sale Supply</p>
+              </div>
+              <div>
+                <h2 class="text-[10px] sm:text-[20px] md:text-[28px] font-[800] text-center" >TBC</h2>
+                <p class="text-[8px] sm:text-[13px] md:text-[18px] font-[600] text-center">Pre-sale Price</p>
+              </div>
+            </div>
+        </div>
+        
+      </div>
+    </section>
+    <section class="w-full">
+      <div
+        class="w-[90%] sm:max-w-[800px] mx-auto flex justify-center items-center text-center mt-[60px] pb-[50px] sm:pb-[100px] md:pb-[150px]"
+      >
+        <p class="text-[13px] sm:text-[21px] ">
+          Boost your love life with $bubu! Join the Relationship <br />
+          Revolution and let's skyrocket our tokens and romance<br />
+          together.
+          <br />
+          <span class="block mt-5">Say 'Yes' to love, prosperity, and $bubu!</span>
+        </p>
+      </div>
+    </section>
+    <!-- telegram -->
+    <section class="w-full hidden sm:block">
+      <div class="max-w-[800px] mx-auto flex items-center justify-center gap-6">
+        <p class="text-[24px]">Join the bubu revolution today</p>
+        <button
+          class="bg-black text-white px-5 py-3 rounded-[30px] border border-borderMain md:hover:bg-white md:hover:text-black transition ease duration-400"
+        >
+        <a href="https://t.me/bubuuanduduu" target="_blank">Join Telegram</a>
+
+        </button>
+      </div>
+    </section>
+    <!-- Faq -->
+    <section class="w-full px-5 my-5 md:px-0">
+      <div
+        class="w-full xl:w-[1100px] md:pt-[60px] md:py-[138px] py-8 mx-auto flex flex-col md:flex-row justify-between"
+      >
+        <div class="w-full sm:w-1/2 flex justify-start">
+          <h2
+            class="text-[32px] md:text-[64px] font-[500] text-black capitalize"
+          >
+            FAQs
+          </h2>
+        </div>
+        <div class="w-full sm:w-1/2 accordion text-black">
+          <div class="accordion-item px-[10px] py-3 sm:p-5 border-y border-y-[#ddd]">
+            <button
+              class="accordion-header text-black flex items-center justify-between w-full py-2 px-0 font-medium text-left"
+            >
+              <span class="font-[700] text-[14px] md:text-[21px]"
+                >wen pizza?</span
+              >
+              <i class="fa-sharp fa-solid fa-plus"></i>
+              <i class="fa-sharp fa-solid fa-minus hidden"></i>
+            </button>
+            <div class="accordion-content hidden py-2 px-5">
+              <p class="mb-2 text-[16px] md:text-[18px]">
+                Ah, the million-dollar question! Well, not quite a million dollars, but a pizza is just as good, right? We're cooking up things at $bubu HQ and as soon as we hit the right topping (read: milestone), that piping hot pizza is all yours! Just like the "When Moon" moment, it'll happen when the time is just right. Stay tuned!
+
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item px-[10px] py-3 sm:p-5 border-b border-b-[#ddd]">
+            <button
+              class="accordion-header text-black flex items-center justify-between w-full py-2 px-0 font-medium text-left"
+            >
+              <span class="font-[700] text-[14px] md:text-[21px]"
+                >wat utility</span
+              >
+              <i class="fa-sharp fa-solid fa-plus"></i>
+              <i class="fa-sharp fa-solid fa-minus hidden"></i>
+            </button>
+            <div class="accordion-content hidden py-2 px-5">
+              <p class="mb-2 text-[16px] md:text-[18px]">
+                $bubu isn't just a regular token, my friend. It's your love-sidekick. From guaranteeing your principal sum to letting you flip tokens for double the fun; from earning rewards while you're out on a romantic escapade, to sealing the deal stress-free with our jeweler partnerships. Plus, we've got your back with continuous relationship support. $bubu's here to make your love journey not just exciting, but prosperous too.
+
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item px-[10px] py-3 sm:p-5 border-b border-b-[#ddd]">
+            <button
+              class="accordion-header text-black flex items-center justify-between w-full py-2 px-0 font-medium text-left"
+            >
+              <span class="font-[700] text-[14px] md:text-[21px]"
+                >wen shopping discounts?</span
+              >
+              <i class="fa-sharp fa-solid fa-plus"></i>
+              <i class="fa-sharp fa-solid fa-minus hidden"></i>
+            </button>
+            <div class="accordion-content hidden py-2 px-5">
+              <p class="mb-2 text-[16px] md:text-[18px]">
+                Diamonds are forever, but waiting for discounts doesn't have to be. We're hustling behind the scenes, tying up deals with some amazing jewelers. Soon, you'll be able to buy that perfect lab-grown diamond for your significant other using $bubu tokens. So, hold tight and get ready to add some sparkle to your love story.
+              </p>
+            </div>
+            </div>
+            <div class="accordion-item px-[10px] py-3 sm:p-5 border-b border-b-[#ddd]">
+              <button
+                class="accordion-header text-black flex items-center justify-between w-full py-2 px-0 font-medium text-left"
+              >
+                <span class="font-[700] text-[14px] md:text-[21px]"
+                  >how to buy?</span
+                >
+                <i class="fa-sharp fa-solid fa-plus"></i>
+                <i class="fa-sharp fa-solid fa-minus hidden"></i>
+              </button>
+              <div class="accordion-content hidden py-2 px-5">
+                <p class="mb-2 text-[16px] md:text-[18px]">
+                  Grabbing some $bubu tokens is as easy as pie. Whether you're well-versed in cryptocurrency or more comfortable with traditional fiat currency, we've got you covered. Just pop over to our official website, follow the prompts, and before you know it, you'll be a proud holder of $bubu tokens. 
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item px-[10px] py-3 sm:p-5 border-b border-b-[#ddd]">
+              <button
+                class="accordion-header text-black flex items-center justify-between w-full py-2 px-0 font-medium text-left"
+              >
+                <span class="font-[700] text-[14px] md:text-[21px]"
+                  >who is dudu and bubu?</span
+                >
+                <i class="fa-sharp fa-solid fa-plus"></i>
+                <i class="fa-sharp fa-solid fa-minus hidden"></i>
+              </button>
+              <div class="accordion-content hidden py-2 px-5">
+                <p class="mb-2 text-[16px] md:text-[18px]">
+                  Ah, the stars of our show! Dudu and Bubu aren't just cute names; they're the heart and soul of $bubu. They represent all of us on this wild journey of love. Whether you're navigating the exciting ups or enduring the occasional downs, Dudu and Bubu are here to remind us that love is an adventure, and it's all worth it. So when you think of $bubu, remember Dudu and Bubu, your pals in this journey of love, and prosperous adventure.
+
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="mt-[70px]">
+      <div
+        class="w-full flex justify-center md:justify-end"
+      >
+        <img src="./img/peachcat-pizza.gif" class="h-[328px]" alt="gif" />
+      </div>
+    </footer>
+  </body>
+</html>
